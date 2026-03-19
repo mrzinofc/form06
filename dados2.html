@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Dados recebidos</h1>
+
+<div class="container">
+    <p class="resultado" id="resultado"></p>
+</div>
+
+<script>
+    let nome = localStorage.getItem("nome");
+    let cidade = localStorage.getItem("cidade");
+
+    document.getElementById("resultado").innerHTML =
+        "Nome: " + nome + "<br>Cidade: " + cidade;
+</script>
+
+</body>
+</html>
